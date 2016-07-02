@@ -57,10 +57,10 @@ function showTool(){
 WeixinJSBridge.call('showToolbar');
 }
 if(document.addEventListener){
-document.addEventListener('WeixinJSBridgeReady', sendMessage, false); 
+	document.addEventListener('WeixinJSBridgeReady', sendMessage, false); 
 }else if(document.attachEvent){
-document.attachEvent('WeixinJSBridgeReady' , sendMessage); 
-document.attachEvent('onWeixinJSBridgeReady' , sendMessage); 
+	document.attachEvent('WeixinJSBridgeReady' , sendMessage); 
+	document.attachEvent('onWeixinJSBridgeReady' , sendMessage); 
 }
 
 //判断网页是否在微信中被调用
@@ -78,6 +78,7 @@ alert("调用失败，请用微信扫一扫，扫描下面二维码打开网页�
 <button onclick="showMenu()" style="width:100px;height:100px;font-size:16px;">显示右上角三个点</button> <br /><br />
 <button onclick="hideTool()" style="width:100px;height:100px;font-size:16px;">隐藏下面导条</button> <br /><br />
 <button onclick="showTool()" style="width:100px;height:100px;font-size:16px;">显示下面导条</button> <br /><br />
+
 </center>
 </body>
 </html>
